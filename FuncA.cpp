@@ -4,7 +4,8 @@
 
 double FuncA::calculate(double x, int n) {
 	double sum = 0.0;
-	f#include "FuncA.h"
+
+#include "FuncA.h"
 #include <cmath>
 
 //Ф-ія обчислює значення суми перших n елементів ряду для ln(1 + x)
@@ -19,11 +20,11 @@ double FuncA::calculate(double x, int n) {
   }
   return sum;
 }or (int i = 1; i <= n; ++i) {
+	int terms = (n < 3) ? n : 3;
+	for (int i = 1; i <= terms; ++i) {
+    
 		sum += pow(-1, i - 1) * pow(x, i) / i;
 	}
 	return sum;
 }
-
-
-
 
