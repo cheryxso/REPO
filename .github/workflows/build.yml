@@ -8,11 +8,12 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v4
+    - name: Log Environment
+      run: env
     - name: configure
       run: ./configure
     - name: make
