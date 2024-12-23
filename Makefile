@@ -862,6 +862,10 @@ uninstall-man: uninstall-man1
 .PRECIOUS: Makefile
 
 
+.PHONY: deb
+deb:
+	make DESTDIR=$(CURDIR)/deb install
+
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.
 .NOEXPORT:
