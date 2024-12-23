@@ -4,7 +4,10 @@
 class FuncA {
 	public:
 		double calculate(double x, int n);
-	};
+};
 
 #endif
+
+
+
 

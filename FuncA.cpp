@@ -23,5 +23,3 @@ double FuncA::calculate(double x, int n) {
 }
 
 
-
-
